@@ -16,6 +16,7 @@ import { App as AntdApp } from "antd";
 import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import { ColorModeContextProvider } from "./contexts/color-mode";
 import Layout from "./components/layout";
+import { resources } from "./config/resources";
 
 function App() {
   return (
@@ -26,11 +27,12 @@ function App() {
           <AntdApp>
             <DevtoolsProvider>
               <Refine
-                dataProvider={dataProvider}
-                liveProvider={liveProvider}
-                notificationProvider={useNotificationProvider}
-                routerProvider={routerBindings}
-                authProvider={authProvider}
+                dataProvider={ dataProvider }
+                liveProvider={ liveProvider }
+                notificationProvider={ useNotificationProvider }
+                routerProvider={ routerBindings }
+                authProvider={ authProvider }
+                resources={ resources }
                 options={{
                   syncWithLocation: true,
                   warnWhenUnsavedChanges: true,

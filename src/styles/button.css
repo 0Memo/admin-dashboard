@@ -1,0 +1,54 @@
+/* Wrapper to mimic Tailwind's h-16 height and relative positioning */
+.button-wrapper {
+    position: relative;
+    display: block;
+    height: 64px; /* Tailwind's h-16 = 4rem */
+    width: fit-content; /* Ensure it doesn't stretch */
+    margin-left: 83%; /* Center alignment */
+    margin-top: 50px;
+}
+
+/* Custom Save Button */
+.custom-save-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100px; /* Adjust width as needed */
+    height: 44px; /* Height remains consistent */
+    background-color: #1f2937; /* Dark gray background */
+    color: rgb(27, 9, 44);
+    font-weight: 600; /* Bold text */
+    border: none;
+    border-radius: 0; /* Remove rounded corners */
+    cursor: pointer;
+    position: relative;
+    transform: skew(20deg); /* Skew to create the parallelogram shape */
+    padding: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+/* Center the text inside the button */
+.button-text {
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+/* Hover State */
+.custom-save-button:hover {
+    background-color: #111827;
+}
+
+.custom-save-button:hover .button-text {
+    color: #fff;
+}
+
+/* Focus/Active State */
+.custom-save-button:focus,
+.custom-save-button:active {
+    outline: none;
+    box-shadow: none;
+}
