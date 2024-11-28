@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'CustomFontName';
+    src: url('../assets/fonts/Kalam-Bold.ttf') format('truetype'),
+        url('../assets/fonts/Kalam-Light.ttf') format('ruetypef'),
+        url('../assets/fonts/Kalam-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Optional: Apply globally */
+body {
+    font-family: 'CustomFontName', sans-serif;
+}
